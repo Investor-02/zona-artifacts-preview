@@ -1,4 +1,4 @@
-const CACHE='mayak-1adf21c7d982',ART='mayak-art-v2',BASE="/zona-artifacts-preview/",SHELL=["/zona-artifacts-preview/","/zona-artifacts-preview/index.html","/zona-artifacts-preview/app-icon.png","/zona-artifacts-preview/manifest.webmanifest","/zona-artifacts-preview/pda-condensed.938869f81aebc7067340edad3ead7408.ttf","/zona-artifacts-preview/_expo/static/js/web/index-b66b4bcc1ee86e955cbd4cf91d88ecf9.js"];
+const CACHE='mayak-7f8f9f93765e',ART='mayak-art-v2',BASE="/zona-artifacts-preview/",SHELL=["/zona-artifacts-preview/","/zona-artifacts-preview/index.html","/zona-artifacts-preview/app-icon.png","/zona-artifacts-preview/manifest.webmanifest","/zona-artifacts-preview/pda-condensed.938869f81aebc7067340edad3ead7408.ttf","/zona-artifacts-preview/_expo/static/js/web/index-b89d132614d73773b3834466a8182099.js"];
 const pending=new Map();let writes=Promise.resolve();
 const immutable=url=>url.pathname.startsWith(BASE)&&/[/.-][a-f0-9]{32}\.(png|jpg|jpeg|webp|js|ttf|m4a|mp3|wav)$/.test(url.pathname);
 async function cached(name,request){try{return await (await caches.open(name)).match(request);}catch{return undefined;}}
